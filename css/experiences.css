@@ -1,0 +1,69 @@
+/* test theme */
+.header {
+  background-color: #F9A828; }
+
+.nav {
+  background-color: #07617D; }
+
+body {
+  margin: 0;
+  background-color: grey; }
+
+h1, h2, h3, p {
+  text-align: center;
+  margin: 0 10px;
+  margin-bottom: 10px; }
+
+ul {
+  text-align: center;
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style-type: none;
+    margin: auto; }
+    ul li a {
+      text-decoration: none;
+      color: black; }
+
+.jumbotron {
+  margin-bottom: 0; }
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: left; }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px; }
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+  background-color: #043c4d; }
+
+section {
+  margin: auto; }
+  section h2 {
+    margin: 20px 0; }
+  section article {
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #BDC3C7;
+    /* grey SILVER*/ }
+    section article h3, section article p {
+      padding: 5px; }
+
+/*# sourceMappingURL=experiences.css.map */

@@ -1,0 +1,55 @@
+@import "./init/variables";
+@import "./init/mixins";
+@import "./init/reset";
+
+.fullHeight{
+	height: 100vh;	
+}
+
+.VerticalAlign{
+	height: 300px;
+	margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  	transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */	
+}
+
+.header{
+	background-color: $leftColor;
+}
+
+.nav{
+	background-color: $rightColor;
+}
+
+nav{
+	ul{
+		display: flex; /* utilisation des flexbox */
+		flex-direction: column; /* on dit a flexbox de placer les éléments en collones*/
+		justify-content: center; /* on aligne les éléments */
+
+		li{ /* on applique une transition sur le background color de 0.8s de facon linéaire.*/
+			@include transitionNavHover(background-color, 0.8s, linear);
+		}
+
+		li:first-child:hover{
+			background-color: lighten($linkHover, 10%);
+		}
+
+		li:nth-child(2):hover{
+			background-color: lighten($linkHover, 5%);
+		}
+
+		li:nth-child(3):hover{
+			background-color: $linkHover;
+		}
+		
+		li:nth-child(4):hover{
+			background-color: darken($linkHover, 5%);
+		}
+
+		li:last-child:hover{
+			background-color: darken($linkHover, 10%);
+		}
+
+	}
+
+}
